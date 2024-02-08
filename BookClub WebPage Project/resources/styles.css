@@ -1,0 +1,175 @@
+
+
+@font-face {
+    font-family: Cinzel Decorative;
+    src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+}
+@font-face {
+    font-family: Bodoni Moda;
+    src: url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+}
+@font-face {
+    font-family: Cormorant Upright;
+    src: url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+}
+
+
+html {
+    font-family: "Cormorant Upright";
+    font-size: 16px; 
+}
+
+
+
+/* HEADER */
+h1 {
+    font-family: "Cinzel Decorative";
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #F3a732;
+    border-bottom: solid 1px #f3a732;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: inline-flex;
+}
+li {
+    display: inline; 
+    padding-left: 56px; 
+    font-size: 20px; 
+}
+a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    list-style-type: none;
+}
+.navbar > ul li {
+    list-style-type: none;
+}
+
+/* ABOUT US SECTION*/
+.about_us {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("./images/shayna-douglas-tweOetXrOSw-unsplash.jpg");
+    background-position: 50% 35%;
+    height: 712px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+/* make aboutus on the background picture a square with the blanched almond color but opacity super light */
+.aboutusblurb {
+    background-color: rgba(255, 235, 205, 0.7);
+    color: black; 
+    align-content: flex-start;
+    height: 170px;
+}
+.aboutusblurb h4 {
+    font-size: 24px;
+    margin-top: 5px;
+}
+.aboutusblurb h2 {
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-bottom: 5px;
+}
+
+
+.meetings_section {
+    height: 160px; 
+    background-color: #ed7336; 
+    align-content: center;
+    border-top: 1px solid #ed7336;
+}
+.meetings_section h2 {
+    font-size: 30px;
+    font-weight: bold; 
+    margin-bottom: 5px;
+}
+.meetings_section h4 {
+    font-size: 24px;
+    margin-top: 5px;
+}
+.meetings_section a {
+    font-weight: bold;
+    color: blue; 
+}
+
+
+
+.bookclub_reads {
+    background-color: #58AA99;
+    display: flex; 
+    width: 100%; 
+}
+.bookclub_reads h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.bookclub_reads h4, .bookclub_reads p {
+    font-size: 24px; 
+}
+
+
+.readsleft {
+    width: 300px; 
+}
+
+.readsright {
+    display: flex; 
+}
+img {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    width: auto;
+    margin: 5px; 
+}   
+.image_container {
+    height: 500px;
+    padding: 5px;
+    margin: 5px; 
+}
+
+
+footer {
+    background-color: #eb543a;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SCREEN SIZE SPECS*/
+
+
+@media only screen and (max-width: 425px) {
+    .bookclub_reads {
+        flex-flow: column; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h4 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .aboutusblurb, .meetings_section {
+        height: 200px; 
+    }
+    .image_container {
+        height: 350px; 
+    }
+}
+
